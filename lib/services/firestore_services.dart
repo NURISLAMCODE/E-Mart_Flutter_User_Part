@@ -114,6 +114,7 @@ class FirestoreServices {
         .get();
   }
 
+//search home page
   static searchProducts(title) {
     return firestore
         .collection(poroductCollection)
