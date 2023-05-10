@@ -16,16 +16,6 @@ class CartScreen extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: whiteColor,
-      bottomNavigationBar: SizedBox(
-        height: 60,
-        child: ourButton(
-          color: redColor,
-          onPress: () {
-            Get.to(() => const ShippingDetails());
-          },
-          title: "Proceed to shipping",
-        ),
-      ),
       appBar: AppBar(
         automaticallyImplyLeading: false,
         title: "Shopping cart"
@@ -119,6 +109,17 @@ class CartScreen extends StatelessWidget {
             );
           }
         },
+      ),
+      bottomNavigationBar: SizedBox(
+        width: context.screenWidth - 60,
+        height: 60,
+        child: ourButton(
+          color: redColor,
+          onPress: () {
+            Get.to(() => const ShippingDetails());
+          },
+          title: "Proceed to shipping",
+        ),
       ),
     );
   }

@@ -21,6 +21,7 @@ class ChatScreen extends StatelessWidget {
             .text
             .fontFamily(semibold)
             .color(darkFontGrey)
+            .size(20)
             .make(),
       ),
       body: Padding(
